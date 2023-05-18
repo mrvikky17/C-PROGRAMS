@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    int r,c;
+    scanf("%d%d",&r,&c);
+    int a[r][c],i,j,sum= 0,mult=1;
+    for (i=0 ;i<r;i++){
+        for ( j= 0;j<c;j++){
+            scanf("%d",&a[i][j]);
+            
+        }
+    }
+    for (i=0 ;i<r;i++){
+        for (j = 0;j<c;j++){
+            sum=sum+a[i][j];
+            mult = mult*a[i][j];
+            
+        }
+    }
+    
+    printf("%d %d",sum , mult);
+    return 0;
+}
